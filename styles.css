@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: gray;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+}
+
+.text--desktop{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    .container{
+        flex-direction: row;
+    }
+
+    .text--mobile{
+        display: none;
+    }
+
+    .text--desktop{
+        display: inline;
+    }
+}
